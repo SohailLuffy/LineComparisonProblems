@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace LC2
+namespace LC3
 {
-    internal class Program
+    internal class LC3
     {
         static void Main(string[] args)
         {
-      
+
             Console.Write("Enter Value A1:");
             int a1 = Convert.ToInt32(Console.ReadLine());
 
@@ -23,7 +23,6 @@ namespace LC2
             Console.WriteLine("Ans Is:" + ans1);
             Console.WriteLine("------------------------------------------------------------------------------------");
 
-          
             Console.Write("Enter Value C1:");
             int c1 = Convert.ToInt32(Console.ReadLine());
 
@@ -40,14 +39,18 @@ namespace LC2
             Console.WriteLine("Ans Is:" + ans2);
             Console.WriteLine("------------------------------------------------------------------------------------");
 
-   
-            if (ans1 == ans2)
+  
+            if (ans1 > ans2)
             {
-                Console.WriteLine("Both The Lines Are Equal");
+                Console.WriteLine("Line 1st Is Greater Than Line 2nd");
+            }
+            else if (ans1 < ans2)
+            {
+                Console.WriteLine("Line 2nd Is Greater Than Line 1st");
             }
             else
             {
-                Console.WriteLine("Both The Lines Are Not Equal");
+                Console.WriteLine("Both Lines Are Equal");
             }
         }
     }
